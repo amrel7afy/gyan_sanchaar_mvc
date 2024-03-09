@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 
 
 
-import 'package:flutter/material.dart';
-import 'package:gyan_sanchaar_mvc_app/presentation/educator/Schedule/widgets/schedule_card.dart';
+import '../../../educator/Schedule/widgets/schedule_card.dart';
 
 import '../../../../../core/my_utils/constants/my_colors.dart';
 import '../../../../../core/my_utils/constants/my_text_styles.dart';
