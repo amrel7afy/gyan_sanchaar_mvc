@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:get/get.dart';
 
 
 
@@ -8,7 +7,6 @@ import 'package:flutter/material.dart';
 import '../../../../../core/my_utils/constants/my_colors.dart';
 import '../../../../../core/my_utils/constants/my_text_styles.dart';
 import '../../../../../core/my_utils/constants/widgets/vertical_and_horizontal_space.dart';
-import '../../../../../routes/app_routes.dart';
 
 import '../../../../../../core/my_utils/constants/constants.dart';
 
