@@ -6,6 +6,7 @@ import '../../../../../core/my_utils/constants/my_colors.dart';
 import '../../../../../core/my_utils/constants/my_text_styles.dart';
 
 import '../../../../../../core/my_utils/constants/constants.dart';
+import '../../../../core/app_export.dart';
 import '../controller/GetX/attendance_controller.dart';
 
 
@@ -17,7 +18,7 @@ class ChipList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 40,
+      height: 40.h,
       child: ListView.builder(
           itemCount: attController.selections.length,
           scrollDirection: Axis.horizontal,

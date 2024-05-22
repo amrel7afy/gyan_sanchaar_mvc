@@ -9,6 +9,7 @@ import '../../../../../core/my_utils/constants/methods.dart';
 import '../../../../../core/my_utils/constants/my_text_styles.dart';
 
 import '../../../../../../core/my_utils/constants/constants.dart';
+import '../../../../core/app_export.dart';
 import '../model/subject_card_model.dart';
 
 
@@ -24,7 +25,7 @@ class SubjectCard extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(right: 16),
       child: Container(
-        width: 149,
+        width: 149.w,
         decoration: BoxDecoration(
           color: subjectCardModel.backGroundColor,
           borderRadius: BorderRadius.circular(cardBorderRadius),
@@ -37,8 +38,8 @@ class SubjectCard extends StatelessWidget {
               left: 10,
               child: Image.asset(
                 subjectCardModel.img,
-                width: 60,
-                height: 50,
+                width: 60.w,
+                height: 50.h,
               ),
             ),
             Positioned(

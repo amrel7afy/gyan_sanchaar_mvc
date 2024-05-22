@@ -10,6 +10,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 
 import 'package:flutter/material.dart';
+import '../../../../core/app_export.dart';
 import 'profile_avatar.dart';
 
 import '../../../../../core/my_utils/constants/methods.dart';
@@ -35,8 +36,8 @@ class HomeViewAppBar extends StatelessWidget {
           buildTitleAndSubTitle(context),
           const Expanded(child: SizedBox(width: 5,)),
           Container(
-            width: 41,
-            height: 36,
+            width: 41.w,
+            height: 36.h,
             padding: const EdgeInsets.all(4),
             decoration:  BoxDecoration(
               color: MyColors.kAlertButtonColor,
@@ -55,7 +56,7 @@ class HomeViewAppBar extends StatelessWidget {
           children: [
             SizedBox(
               width: getWidth(context) * 0.4,
-              child: const Text(
+              child:  Text(
                 'Lina Kovalenko',
                 overflow: TextOverflow.ellipsis,
                 maxLines: 2,

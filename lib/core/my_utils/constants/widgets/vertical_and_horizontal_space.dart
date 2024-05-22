@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gyan_sanchaar_mvc_app/core/my_utils/constants/methods.dart';
 
+import '../../../app_export.dart';
+
 class VerticalSpacer extends StatelessWidget {
   const VerticalSpacer(this.verticalSpace, {super.key});
 
@@ -8,7 +10,7 @@ class VerticalSpacer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(height: getHeight(context)*verticalSpace/100);
+    return SizedBox(height: getHeight(context)*verticalSpace/100.h);
   }
 }
 
@@ -19,6 +21,6 @@ class HorizontalSpacer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(width: getWidth(context)*horizontalSpace/100);
+    return SizedBox(width: getWidth(context)*horizontalSpace/100.w);
   }
 }

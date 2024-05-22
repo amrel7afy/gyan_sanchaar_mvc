@@ -263,7 +263,7 @@ gradient: LinearGradient(
         color: ColorConstant.white,
         border: Border.all(
           color: ColorConstant.inputField,
-          width: 1.h,
+          width: 1.w,
         ),
       );
   static BoxDecoration get outlineGreen100 => BoxDecoration(

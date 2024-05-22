@@ -11,6 +11,7 @@ import 'package:gyan_sanchaar_mvc_app/core/my_utils/constants/widgets/vertical_a
 import 'package:gyan_sanchaar_mvc_app/routes/app_routes.dart';
 
 import '../../../../../../core/my_utils/constants/constants.dart';
+import '../../../../../core/app_export.dart';
 
 
 class CourseCard extends StatelessWidget {
@@ -34,7 +35,7 @@ class CourseCard extends StatelessWidget {
     return GestureDetector(
      onTap: () {Get.toNamed(AppRoutes.courseDetailsView);} ,
       child: Container(
-        height: 115,
+        height: 115.h,
         padding: const EdgeInsets.all(12),
         margin: const EdgeInsets.only(bottom: 15),
         decoration: BoxDecoration(
@@ -67,7 +68,7 @@ class CourseCard extends StatelessWidget {
                 const Spacer(),
                 Image.asset(
                   MyAssets.atom,
-                  height: 50,
+                  height: 50.h,
                 )
               ],
             ),

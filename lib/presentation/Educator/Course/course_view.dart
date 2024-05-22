@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../core/app_export.dart';
 import '../../../core/my_utils/constants/constants.dart';
 import '../../../core/my_utils/constants/my_colors.dart';
 import '../../../core/my_utils/constants/my_text_styles.dart';
@@ -15,7 +16,7 @@ class CourseView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         titleSpacing: kLeftCourseViewPadding,
-        leadingWidth: 80,
+        leadingWidth: 80.w,
         title: Text(
           'Courses',
           style: MyTextStyles.boldTextStyle20

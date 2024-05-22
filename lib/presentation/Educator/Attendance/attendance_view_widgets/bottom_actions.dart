@@ -6,6 +6,7 @@ import 'package:gyan_sanchaar_mvc_app/core/my_utils/constants/my_text_styles.dar
 import 'package:gyan_sanchaar_mvc_app/core/my_utils/constants/widgets/custom_button.dart';
 
 import '../../../../../../core/my_utils/constants/constants.dart';
+import '../../../../core/app_export.dart';
 
 class BottomActions extends StatefulWidget {
   const BottomActions({
@@ -77,8 +78,8 @@ class _BottomActionsState extends State<BottomActions> {
                           .copyWith(color: MyColors.kPrimaryColor)),
                 ),
               ),
-              const SizedBox(
-                width: 2,
+               SizedBox(
+                width: 2.w,
               ),
               InkWell(
                 onTap: ()async{
@@ -109,7 +110,7 @@ class _BottomActionsState extends State<BottomActions> {
           const Spacer(),
           SizedBox(
             width: getWidth(context) * 0.34,
-            height: 49,
+            height: 49.h,
             child: CustomButton(
               textStyle:
                   MyTextStyles.boldTextStyle18.copyWith(color: Colors.white),

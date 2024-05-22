@@ -9,6 +9,7 @@ import 'package:gyan_sanchaar_mvc_app/core/my_utils/constants/my_text_styles.dar
 import 'package:gyan_sanchaar_mvc_app/core/my_utils/constants/widgets/vertical_and_horizontal_space.dart';
 
 import '../../../../../../core/my_utils/constants/constants.dart';
+import '../../../../../core/app_export.dart';
 
 
 class CourseDetailsCard extends StatelessWidget {
@@ -32,7 +33,7 @@ class CourseDetailsCard extends StatelessWidget {
     return GestureDetector(
       onTap: () {},
       child: Container(
-        height: 200,
+        height: 200.h,
         padding: const EdgeInsets.all(12),
         margin: const EdgeInsets.only(bottom: 15),
         decoration: BoxDecoration(
@@ -63,7 +64,7 @@ class CourseDetailsCard extends StatelessWidget {
                 const Spacer(),
                 Image.asset(
                   MyAssets.atom,
-                  height: 50,
+                  height: 50.h,
                 )
               ],
             ),

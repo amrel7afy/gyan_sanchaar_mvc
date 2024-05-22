@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import '../../../../../core/my_utils/constants/my_colors.dart';
 import '../../../../../core/my_utils/constants/my_text_styles.dart';
 import '../../../../../core/my_utils/constants/widgets/vertical_and_horizontal_space.dart';
+import '../../../../core/app_export.dart';
 import '../model/subject_card_model.dart';
 import 'subject_card.dart';
 
@@ -20,7 +21,7 @@ class SubjectsSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text(
+         Text(
           'Subjects',
           style: MyTextStyles.boldTextStyle24,
         ),
@@ -31,7 +32,7 @@ class SubjectsSection extends StatelessWidget {
         ),
         const VerticalSpacer(1.6),
         SizedBox(
-          height: 119,
+          height: 119.h,
           child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: SubjectCardModel.cardsModels.length,

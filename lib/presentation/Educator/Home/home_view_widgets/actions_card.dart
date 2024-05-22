@@ -3,6 +3,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:gyan_sanchaar_mvc_app/core/my_utils/constants/my_text_styles.dart';
 
+import '../../../../core/app_export.dart';
+
 
 
 class ActionCard extends StatelessWidget {
@@ -22,7 +24,7 @@ class ActionCard extends StatelessWidget {
       child: GestureDetector(
         onTap: onTap,
         child: Container(
-          height: 100,
+          height: 100.h,
           alignment: Alignment.center,
           color: backGroundColor,
           child: Column(

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../app_export.dart';
+
 class ProgressDialogUtils {
   static bool isProgressVisible = false;
 
@@ -10,8 +12,8 @@ class ProgressDialogUtils {
       Get.dialog(
         Center(
           child: CircularProgressIndicator.adaptive(
-            strokeWidth: 4,
-            valueColor: AlwaysStoppedAnimation<Color>(
+            strokeWidth: 4.w,
+            valueColor: const AlwaysStoppedAnimation<Color>(
               Colors.white,
             ),
           ),

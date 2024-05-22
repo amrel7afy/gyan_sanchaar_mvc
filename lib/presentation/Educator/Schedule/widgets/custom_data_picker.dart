@@ -11,6 +11,7 @@ import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/my_utils/constants/my_colors.dart';
 import '../../../../../core/my_utils/constants/my_text_styles.dart';
+import '../../../../core/app_export.dart';
 import '../controller/GetX/schedule_controller.dart';
 
 
@@ -23,10 +24,10 @@ class CustomDatePicker extends StatelessWidget {
     return GetBuilder<ScheduleController>(
       builder: (logic) {
         return SizedBox(
-          height: 68,
+          height: 60.h,
           child: DatePicker(
             initialSelectedDate: DateTime.now(),
-            width: 48,
+            width: 48.w,
             DateTime.now(),
             onDateChange: (date) {
               logic.changeDate(date);

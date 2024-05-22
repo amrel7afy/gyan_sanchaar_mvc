@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gyan_sanchaar_mvc_app/core/my_utils/constants/my_colors.dart';
 import 'package:gyan_sanchaar_mvc_app/core/my_utils/constants/my_text_styles.dart';
 
+import '../../../../core/app_export.dart';
+
 
 Widget buildCheckBoxItem({
   required String letter,
@@ -18,8 +20,8 @@ Widget buildCheckBoxItem({
       ),
       const SizedBox(width: 4),
       SizedBox(
-        width: 25,
-        height: 39,
+        width: 25.w,
+        height: 39.h,
         child: Checkbox(
           value: status,
           hoverColor: MyColors.kGreyColor,

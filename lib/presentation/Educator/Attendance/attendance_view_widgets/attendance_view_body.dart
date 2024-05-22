@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/app_export.dart';
 import 'attendance_table.dart';
 import 'bottom_actions.dart';
 import 'chip_list.dart';
@@ -14,13 +15,13 @@ class AttendanceViewBody extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(height: 18),
+         SizedBox(height: 18.h),
         ChipList(),
-        const SizedBox(height: 20),
+         SizedBox(height: 20.h),
         const Expanded(child: SingleChildScrollView(child: AttendanceTable())),
-        const SizedBox(height: 5),
+         SizedBox(height: 5.h),
         const BottomActions(),
-        const SizedBox(height: 10),
+         SizedBox(height: 10.h),
       ],
     );
   }

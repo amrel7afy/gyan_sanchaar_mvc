@@ -8,6 +8,7 @@ import 'package:flutter/cupertino.dart';
 
 
 import 'package:flutter/material.dart';
+import '../../../../../core/app_export.dart';
 import '../../../../../core/my_utils/constants/methods.dart';
 import '../../../../../core/my_utils/constants/my_colors.dart';
 import '../../../../../core/my_utils/constants/my_text_styles.dart';
@@ -47,7 +48,7 @@ class SyllabusViewBody extends StatelessWidget {
 
   SizedBox buildButton(BuildContext context) {
     return SizedBox(
-      height: 55,
+      height: 55.h,
       width: getWidth(context),
       child: CustomButton(
         borderRadius: BorderRadius.circular(10),

@@ -7,6 +7,7 @@ import 'package:get/get.dart';
 
 
 
+import '../../../../core/app_export.dart';
 import '../../../../core/my_utils/constants/my_colors.dart';
 import '../../../../core/my_utils/constants/my_text_styles.dart';
 import '../../../../core/my_utils/constants/widgets/vertical_and_horizontal_space.dart';
@@ -51,8 +52,8 @@ class ScheduleViewAppBar extends StatelessWidget {
           const Spacer(),
           Container(
             alignment: Alignment.center,
-            height: 40,
-            width: 83,
+            height: 40.h,
+            width: 83.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 color: MyColors.kPrimaryColor.withOpacity(0.15)),

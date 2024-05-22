@@ -18,7 +18,7 @@ class CourseAssignmentCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 164,
+     
       color: MyColors.kCardColor,
       padding: const EdgeInsets.all(12),
       child: Column(

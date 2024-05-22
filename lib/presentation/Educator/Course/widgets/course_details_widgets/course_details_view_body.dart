@@ -26,26 +26,26 @@ class CourseDetailsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomScrollView(
-      physics: BouncingScrollPhysics(),
+    return  CustomScrollView(
+      physics: const BouncingScrollPhysics(),
       slivers: [
         SliverToBoxAdapter(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: kLeftCourseViewPadding),
+            padding: const EdgeInsets.symmetric(horizontal: kLeftCourseViewPadding),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CourseDetailsCard(
+                const CourseDetailsCard(
                   backGroundColor: MyColors.kPrimaryColor,
                 ),
-                VerticalSpacer(2),
+                const VerticalSpacer(2),
                 Text('Assignments',style: MyTextStyles.semiBoldTextStyle20,),
-                VerticalSpacer(2),
-                CourseAssignmentCard(),
-                VerticalSpacer(2),
+                const VerticalSpacer(2),
+                const CourseAssignmentCard(),
+                const VerticalSpacer(2),
                 Text('Group work',style: MyTextStyles.semiBoldTextStyle20,),
-                VerticalSpacer(2),
-                GroupWorkCard()
+                const VerticalSpacer(2),
+                const GroupWorkCard()
               ],
             ),
           ),

@@ -22,7 +22,7 @@ class QuickLinksSection extends StatelessWidget {
         children: [
           Row(
             children: [
-              const Text(
+               Text(
                 'Quick Links ',
                 style: MyTextStyles.boldTextStyle24,
               ),

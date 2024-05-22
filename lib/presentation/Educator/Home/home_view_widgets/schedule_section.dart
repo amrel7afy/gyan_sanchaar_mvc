@@ -24,7 +24,7 @@ class ScheduleSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text(
+         Text(
           'Your Schedule',
           style: MyTextStyles.boldTextStyle24,
         ),
@@ -40,7 +40,7 @@ class ScheduleSection extends StatelessWidget {
               ),
               const Spacer(),
               SeeMoreButton(onTap: (){
-               Get.to( AppRoutes.scheduleView);
+               //Get.to( AppRoutes.scheduleView);
               },),
             ],
           ),

@@ -8,9 +8,9 @@ import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:gyan_sanchaar_mvc_app/core/my_utils/constants/methods.dart';
-import 'package:gyan_sanchaar_mvc_app/core/my_utils/constants/my_colors.dart';
-import 'package:gyan_sanchaar_mvc_app/core/my_utils/constants/my_text_styles.dart';
+import '../../../../../core/my_utils/constants/methods.dart';
+import '../../../../../core/my_utils/constants/my_colors.dart';
+import '../../../../../core/my_utils/constants/my_text_styles.dart';
 
 class SyllabusCard extends StatelessWidget {
   const SyllabusCard({
@@ -27,7 +27,7 @@ class SyllabusCard extends StatelessWidget {
             width: getWidth(context) * 0.7,
             child:  Column(
               children: [
-                const Text(
+                 Text(
                   'Lesson 1. Getting to know the WebFlow interface',
                   overflow: TextOverflow.ellipsis,
                   maxLines: 2,

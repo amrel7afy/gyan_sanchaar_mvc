@@ -8,7 +8,9 @@ import 'package:gyan_sanchaar_mvc_app/routes/app_routes.dart';
 import 'core/app_export.dart';
 import 'core/utils/dismiss_keyboard.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await ScreenUtil.ensureScreenSize();
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     systemNavigationBarColor: Colors.transparent, // navigation bar color
     statusBarColor: Colors.transparent, // status bar color

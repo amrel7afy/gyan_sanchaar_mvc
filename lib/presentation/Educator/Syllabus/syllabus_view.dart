@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 
 
-import 'package:flutter/material.dart';
 import '../../../../core/my_utils/constants/my_colors.dart';
 import '../../../../core/my_utils/constants/my_text_styles.dart';
+import '../../../core/app_export.dart';
 import 'view/syllabus_view_widgets/syllabus_view_body.dart';
 
 
@@ -17,7 +17,7 @@ class SyllabusView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         titleSpacing: 00.0,
-        leadingWidth: 80,
+        leadingWidth: 80.w,
         leading: IconButton(
           icon: const Icon(
             Icons.arrow_back_ios_new,
@@ -25,7 +25,7 @@ class SyllabusView extends StatelessWidget {
           ),
           onPressed: () => Navigator.pop(context),
         ),
-        title: const Text(
+        title:  Text(
           'Syllabus',
           style: MyTextStyles.boldTextStyle18,
         ),

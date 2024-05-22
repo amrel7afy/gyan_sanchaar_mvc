@@ -10,6 +10,7 @@ import '../../../../../core/my_utils/constants/widgets/show_dialog_method.dart';
 import '../../../../../core/my_utils/constants/widgets/vertical_and_horizontal_space.dart';
 
 import '../../../../../../core/my_utils/constants/constants.dart';
+import '../../../../core/app_export.dart';
 import 'build_drop_down_menu.dart';
 
 class AssignmentsViewBody extends StatefulWidget {
@@ -59,7 +60,7 @@ class _AssignmentsViewBodyState extends State<AssignmentsViewBody> {
                 _buildLastTwoFields(),
                 const VerticalSpacer(2),
                 SizedBox(
-                  height: 55,
+                  height: 55.h,
                   width: getWidth(context),
                   child: CustomButton(
                     borderRadius: BorderRadius.circular(10),

@@ -12,6 +12,7 @@ import 'package:flutter/material.dart';
 import '../../../../../core/my_utils/constants/my_colors.dart';
 import '../../../../../core/my_utils/constants/my_text_styles.dart';
 import '../../../../../core/my_utils/constants/widgets/vertical_and_horizontal_space.dart';
+import '../../../../core/app_export.dart';
 import 'schedule_painter.dart';
 import 'scheduled_subject_time.dart';
 
@@ -23,7 +24,7 @@ class ScheduleCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 130,
+      height: 130.h,
       margin: const EdgeInsets.only(right: 34),
       decoration: BoxDecoration(
         color: MyColors.kCardColor,
@@ -32,7 +33,7 @@ class ScheduleCard extends StatelessWidget {
       child: Stack(
         children: <Widget>[
           const SchedulePainter(),
-          const Positioned(
+           Positioned(
             top: 27,
             left: 18,
             child: Column(
@@ -42,13 +43,13 @@ class ScheduleCard extends StatelessWidget {
                   'Biology',
                   style: MyTextStyles.semiBoldTextStyle22,
                 ),
-                VerticalSpacer(1),
+                const VerticalSpacer(1),
                 Text(
                   'Chapter 3 : Animal Kingdom',
                   style: MyTextStyles.semiBoldTextStyle12,
                 ),
-                VerticalSpacer(1),
-                ScheduledSubjectTime()
+                const VerticalSpacer(1),
+                const ScheduledSubjectTime()
               ],
             ),
           ),
@@ -57,7 +58,7 @@ class ScheduleCard extends StatelessWidget {
             top: 15,
             child: Image.asset(
               'assets/images/notespng.png',
-              height: 90,
+              height: 90.h,
             ),
           ),
         ],

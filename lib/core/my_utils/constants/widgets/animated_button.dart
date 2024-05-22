@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 
+import '../../../app_export.dart';
 import '../methods.dart';
 
 
@@ -65,7 +66,7 @@ class _MyAnimatedButtonState extends State<MyAnimatedButton>
     return AnimatedContainer(
       duration: const Duration(milliseconds:600),
       width: isLoading ? 50.0 : getWidth(context)*.9,
-      height: 50.0,
+      height: 50.0.h,
       decoration: BoxDecoration(
         color: widget.color,
         borderRadius: BorderRadius.circular(isLoading ? 25.0 : 20),

@@ -1,17 +1,12 @@
 
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import 'package:gyan_sanchaar_mvc_app/core/my_utils/constants/my_assets.dart';
+import '../../../../core/my_utils/constants/my_assets.dart';
+import '../../../../core/my_utils/constants/my_colors.dart';
+import '../../../../core/my_utils/constants/my_text_styles.dart';
+import '../../../../core/my_utils/constants/widgets/vertical_and_horizontal_space.dart';
 
-
-import 'package:flutter/material.dart';
-import 'package:gyan_sanchaar_mvc_app/core/my_utils/constants/my_colors.dart';
-import 'package:gyan_sanchaar_mvc_app/core/my_utils/constants/my_text_styles.dart';
-import 'package:gyan_sanchaar_mvc_app/core/my_utils/constants/widgets/vertical_and_horizontal_space.dart';
+import '../../../../core/app_export.dart';
 
 
 class CourseTimeLineCard extends StatelessWidget {
@@ -22,7 +17,7 @@ class CourseTimeLineCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 140,
+      height: 130.h,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -41,12 +36,12 @@ class CourseTimeLineCard extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(
-              height: 143,
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 10),
+           SizedBox(
+              height: 143.h,
+              child:  Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: VerticalDivider(
-                  width: 0.5,
+                  width: 0.5.w,
                   thickness: 1,
                   color: MyColors.kExtraGreyColor,
                 ),
@@ -69,7 +64,7 @@ class CourseTimeLineCard extends StatelessWidget {
           child: Container(
             margin: const EdgeInsets.only(bottom: 16),
             padding: const EdgeInsets.all(16),
-            height: 200,
+            height: 200.h,
             decoration: BoxDecoration(
                 color: backGroundColor,
                 borderRadius: BorderRadius.circular(16)),
@@ -86,8 +81,8 @@ class CourseTimeLineCard extends StatelessWidget {
                     const Spacer(),
                     SvgPicture.asset(
                       MyAssets.twoVerticalDots,
-                      width: 24,
-                      height: 24,
+                      width: 24.w,
+                      height: 24.h,
                       color: iconColor,
                     )
                   ],
@@ -97,33 +92,39 @@ class CourseTimeLineCard extends StatelessWidget {
                   style: MyTextStyles.mediumTextStyle12
                       .copyWith(color: textColor),
                 ),
-                const VerticalSpacer(0.13),
+                const Spacer(),
                 Row(
                   children: [
-                    SvgPicture.asset(MyAssets.location,color: iconColor,),
-                    const HorizontalSpacer(1.2),
-                    Text(
-                      'Online Mode',
-                      style: MyTextStyles.mediumTextStyle12.copyWith(
-                          color: textColor, fontWeight: FontWeight.w400),
+                    Column(
+                      children: [
+                        SvgPicture.asset(MyAssets.location,color: iconColor,),
+                        const VerticalSpacer(1.2),
+                        CircleAvatar(
+                          radius: 8,
+                          backgroundImage: NetworkImage(img),
+                        )
+                      ],
+                    ),
+                    const HorizontalSpacer(2),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Online Mode',
+                          style: MyTextStyles.mediumTextStyle12.copyWith(
+                              color: textColor, fontWeight: FontWeight.w400),
+                        ), const VerticalSpacer(0.2),
+                        Text(
+                          'Brooklyn Williamson',
+                          style: MyTextStyles.mediumTextStyle12.copyWith(
+                              color: textColor, fontWeight: FontWeight.w400),
+                        )
+                      ],
                     ),
                   ],
                 ),
-                const VerticalSpacer(1),
-                Row(
-                  children: [
-                    CircleAvatar(
-                      radius: 8,
-                      backgroundImage: NetworkImage(img),
-                    ),
-                    HorizontalSpacer(1),
-                    Text(
-                      'Brooklyn Williamson',
-                      style: MyTextStyles.mediumTextStyle12.copyWith(
-                          color: textColor, fontWeight: FontWeight.w400),
-                    )
-                  ],
-                )
+                const VerticalSpacer(0.71),
+
               ],
             ),
           ),

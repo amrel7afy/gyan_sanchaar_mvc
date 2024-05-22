@@ -11,6 +11,7 @@ import 'package:flutter/material.dart';
 import 'package:gyan_sanchaar_mvc_app/core/my_utils/constants/my_text_styles.dart';
 
 import '../../../../../../core/my_utils/constants/constants.dart';
+import '../../../../../core/app_export.dart';
 
 
 
@@ -31,7 +32,7 @@ class RemainingLecturesCard extends StatelessWidget {
       child: GestureDetector(
         onTap: onTap,
         child: Container(
-          height: 64,
+          height: 64.h,
           padding: const EdgeInsets.all(12),
 
           color: backGroundColor,
