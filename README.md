@@ -1,16 +1,25 @@
-# gyan_sanchaar_mvc_app
+# Gyan San Chaar - School Management App
 
-A new Flutter project.
+## Overview
 
-## Getting Started
+Gyan San Chaar is a comprehensive school management application developed using Flutter. The app enables efficient management of syllabi, assignments, and schedules, enhancing teacher-student communication and academic collaboration. The aim is to improve the overall learning experience within educational institutions.
+## Video
+https://github.com/amrel7afy/gyan_sanchaar_mvc/assets/58088485/4ffb01d0-c752-4ec9-8c9a-1f21d9637515
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- **Syllabus Management:** Easily manage and update course syllabi.
+- **Assignment Management:** Create, assign, and track assignments efficiently.
+- **Schedule Management:** Maintain and organize class schedules and timetables.
+- **Teacher-Student Communication:** Facilitate better communication between teachers and students.
+- **Academic Collaboration:** Enhance collaboration on academic projects and activities.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/gyan-san-chaar.git
